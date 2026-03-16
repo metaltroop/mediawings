@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-cyan: #00B4D8;
+  --color-brand-cyan-light: #48CAE4;
+  --color-brand-cyan-dark: #0077B6;
+  --color-brand-black: #111111;
+  --color-brand-gray: #F8F9FA;
+  --color-brand-lavender: #F9F5FF;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Montserrat', 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+
+  html,
+  body {
+    @apply antialiased text-gray-800 bg-white scroll-smooth;
+  }
+}
+
+/* Custom Gradients as seen on site */
+.text-gradient {
+  background: linear-gradient(90deg, var(--color-brand-cyan) 0%, var(--color-brand-cyan-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Floating Animations */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--tw-rotate, 0deg));
+  }
+
+  50% {
+    transform: translateY(-20px) rotate(var(--tw-rotate, 0deg));
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 6s ease-in-out 3s infinite;
+}
