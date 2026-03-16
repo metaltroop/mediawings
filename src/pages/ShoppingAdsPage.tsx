@@ -1,5 +1,5 @@
 import { useModal } from '../contexts/ModalContext';
-import { Star, Plus, Minus, Users, Target, TrendingUp, ShoppingBag, ShoppingCart, CreditCard, Box, Truck, Monitor } from 'lucide-react';
+import { Star, Plus, Minus, Users, Target, TrendingUp, ShoppingBag, ShoppingCart, CreditCard, Truck } from 'lucide-react';
 import { useState } from 'react';
 
 // Images (Using existing assets)
